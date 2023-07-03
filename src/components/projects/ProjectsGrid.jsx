@@ -33,7 +33,7 @@ const ProjectsGrid = () => {
                         mb-3
                         "
 				>
-					Search projects by title or filter by category
+					{/* Search projects by title or filter by category */}
 				</h3>
 				<div
 					className="
@@ -45,7 +45,7 @@ const ProjectsGrid = () => {
                         gap-3
                         "
 				>
-					<div className="flex justify-between gap-2">
+					{/* <div className="flex justify-between gap-2">
 						<span
 							className="
                                 hidden
@@ -87,7 +87,7 @@ const ProjectsGrid = () => {
 							placeholder="Search Projects"
 							aria-label="Name"
 						/>
-					</div>
+					</div> */}
 
 					<ProjectsFilter setSelectProject={setSelectProject} />
 				</div>

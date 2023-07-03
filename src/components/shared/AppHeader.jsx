@@ -45,7 +45,7 @@ const AppHeader = () => {
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
-					<div>
+					{/* <div>
 						<Link to="/">
 							{activeTheme === 'dark' ? (
 								<img
@@ -61,7 +61,19 @@ const AppHeader = () => {
 								/>
 							)}
 						</Link>
+					</div> */}
+					<div>
+						<Link to="/">
+							{activeTheme === 'dark' ? (
+								<h2 className='text-3xl font-bold text-black'>Nazmul Hasan</h2>
+							) : (
+								<h2 className='text-3xl font-bold text-white'>Nazmul Hasan</h2>
+							)}
+						</Link>
 					</div>
+					{/* <div>
+						<h2 className='text-3xl font-bold'>Nazmul Hasan</h2>
+					</div> */}
 
 					{/* Theme switcher small screen */}
 					<div

@@ -1,17 +1,19 @@
 import { Link } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
-import ProjectsGrid from '../components/projects/ProjectsGrid';
-import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
+import About from '../pages/AboutMe';
+import Contact from './Contact';
+import MyProjects from './MyProjects/MyProjects';
 
 const Home = () => {
 	return (
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
+			<MyProjects></MyProjects>
 
-			<ProjectsProvider>
+			{/* <ProjectsProvider>
 				<ProjectsGrid></ProjectsGrid>
-			</ProjectsProvider>
+			</ProjectsProvider> */}
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
 				<Link
@@ -22,6 +24,18 @@ const Home = () => {
 					<Button title="More Projects" />
 				</Link>
 			</div>
+			<div className="text-center">
+				<p className="font-general-medium text-2xl sm:text-4xl mt-12 mb-1 text-ternary-dark dark:text-ternary-light">
+					About Me
+				</p>
+			</div>
+			<About />
+			<div className="text-center">
+				<p className="font-general-medium text-2xl sm:text-4xl mt-12 mb-1 text-ternary-dark dark:text-ternary-light">
+					Contact Me
+				</p>
+			</div>
+			<Contact></Contact>
 		</div>
 	);
 };
